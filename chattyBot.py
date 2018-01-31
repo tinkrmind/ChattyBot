@@ -12,7 +12,7 @@
 
 
 from cleverwrap import CleverWrap
-chatBot = CleverWrap("CleverBot API key")
+chatBot = CleverWrap("CC6zkRgO9TPlPcz6AO_zLCunNBg")
 import subprocess
 import sys
 
@@ -20,8 +20,8 @@ shell = True
 #chatBot.reset()
 
 def speak(this):
-    print('- '+this)
-    subprocess.run(['flite', '-t', this])
+    print('- '+str(this))
+    subprocess.run(['flite', '-voice', 'file://cmu_us_aew.flitevox', '-t', str(this)])
 
 speak('I\'m listening')
 var = input('> ')
