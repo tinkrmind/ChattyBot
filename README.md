@@ -14,4 +14,6 @@ Usage:
 
     python chatBot.py
     
-then just type after the > prompt to leave, type > I'm leaving
+then just type after the > prompt.
+
+To exit, type > I'm leaving
